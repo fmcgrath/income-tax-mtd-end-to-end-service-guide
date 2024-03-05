@@ -1,0 +1,44 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  Build_the_markup_files:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Setup ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.2'
+          bundler-cache: true
+      - name: Checkout guide
+        run: |
+             mkdir src && cd src
+             git clone https://github.com/fmcgrath/income-tax-mtd-end-to-end-service-guide.git
+      - name: Install ruby dependencies
+        run: |
+          cd src/income-tax-mtd-end-to-end-service-guide
+          bundle install
+      - name: Build static site
+        run: |
+             cd src/income-tax-mtd-end-to-end-service-guide
+             bundle exec middleman build
+      - name: checkout destination
+        run: |
+             mkdir dest && cd dest
+             git clone https://github.com/fmcgrath/mtd-itsa-service-guide-prototype.git
+      - name: Retrieve markup files
+        run: |
+             cp -r src/income-tax-mtd-end-to-end-service-guide/build/* dest/mtd-itsa-service-guide-prototype/
+      - name: Commit
+        run: |
+             cd dest/mtd-itsa-service-guide-prototype
+             git config user.name "Github.Action"
+             git config user.email "fergal.mcgrath@digital.hmrc.gov.uk"
+             git add .
+             git commit -m "Deploy to GitHub Pages"
+             git push https://${{ secrets.PAT }}@github.com/fmcgrath/mtd-itsa-service-guide-prototype.git
