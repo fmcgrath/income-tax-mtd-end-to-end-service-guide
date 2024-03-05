@@ -37,7 +37,7 @@ jobs:
       - name: Commit
         run: |
              cd dest/mtd-itsa-service-guide-prototype
-             git config user.name "Github.Action"
+             git config user.name "fmcgrath"
              git config user.email "fergal.mcgrath@digital.hmrc.gov.uk"
              git add .
              git commit -m "Deploy to GitHub Pages"
