@@ -39,6 +39,7 @@ jobs:
              cd dest/mtd-itsa-service-guide-prototype
              git config user.name "fmcgrath"
              git config user.email "fergal.mcgrath@digital.hmrc.gov.uk"
+             git config url.https://${{ secrets.PAT }}@github.com/.insteadOf https://github.com/
              git add .
              git commit -m "Deploy to GitHub Pages"
              git push https://${{ secrets.PAT }}@github.com/fmcgrath/mtd-itsa-service-guide-prototype.git
