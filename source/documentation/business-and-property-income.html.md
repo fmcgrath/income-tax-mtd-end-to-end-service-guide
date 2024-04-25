@@ -13,11 +13,11 @@ A customer’s MTD mandated income consists of the following:
 - self-employed sole trader income
 - property income
 
-This is the ‘qualifying’ income HMRC uses to establish if the customer meets the criteria for MTD.  MTD Customers can have one, or multiple, businesses with these types of income. For more information on qualifying income, refer to [Check what is included in your qualifying income](https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax#check-what-is-included-in-your-qualifying-income).
+This is the ‘qualifying’ income HMRC uses to establish if the customer meets the criteria for MTD.  MTD Customers can have one, or multiple, businesses with these types of income. For more information about qualifying income, refer to [Check what is included in your qualifying income (GOV.UK)](https://www.gov.uk/guidance/check-if-youre-eligible-for-making-tax-digital-for-income-tax#check-what-is-included-in-your-qualifying-income).
 
 ### Self-employed sole trader income
 
-If the customer is working for themselves, they are a sole trader. For more information on identifying self-employed sole traders, refer to [Working for yourself](https://www.gov.uk/working-for-yourself?step-by-step-nav=01ff8dbd-886a-4dbb-872c-d2092b31b2cf). Currently, self-employment income refers to sole trader self-employment income and not income earned through partnerships. This exclusion also applies to directors of limited companies.
+If the customer is working for themselves, they are a sole trader. For more information about identifying self-employed sole traders, refer to [Working for yourself (GOV.UK)](https://www.gov.uk/working-for-yourself?step-by-step-nav=01ff8dbd-886a-4dbb-872c-d2092b31b2cf). Currently, self-employment income refers to sole trader self-employment income and not income earned through partnerships. This exclusion also applies to directors of limited companies.
 
 ### Property income
 
@@ -30,7 +30,7 @@ A customer’s property income includes the following:
 - premiums from leasing UK land
 - inducements to take an interest in letting a property (a reverse premium)
 
-For more information on property income, refer to [Work out your rental income when you let property (GOV.UK)](https://www.gov.uk/guidance/income-tax-when-you-rent-out-a-property-working-out-your-rental-income).
+For more information about property income, refer to [Work out your rental income when you let property (GOV.UK)](https://www.gov.uk/guidance/income-tax-when-you-rent-out-a-property-working-out-your-rental-income).
 
 ## Retrieving obligations
 
@@ -71,9 +71,9 @@ Customers must submit at least one update for each quarter. The following table 
 
 The software should convert transactional information into summary totals. It should categorise these totals as income or expenses. It should send this summary information to HMRC for each self-employment and property income source. HMRC can then use this information to calculate business profits based on the most recent data.
 
-Customers with an annual turnover (sales) less than £85,000 can report their total income and expenses in their quarterly updates (no detailed breakdown required). They can do this through the software by using the ‘Consolidated Expenses’ parameter in the [Self Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/3.0) and [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/3.0) APIs for both self-employment and property income.
+Customers with an annual turnover (sales) of less than £85,000 can report their total income and expenses in their quarterly updates (no detailed breakdown required). They can do this through the software by using the ‘Consolidated Expenses’ parameter in the [Self Employment Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/self-employment-business-api/3.0) and [Property Business](https://developer.service.hmrc.gov.uk/api-documentation/docs/api/service/property-business-api/3.0) APIs for both self-employment and property income.
 
-When the tax calculation is triggered, it means that the quarterly obligation has been fulfilled, if the data covers the entire period. If the calculation fails, the obligation will not be marked as fulfilled. Customers can also check the status of their [obligations](#retrieving-obligations) through HMRC online services.
+When the tax calculation is triggered, it means that the quarterly obligation has been fulfilled, if the data covers the entire period. If the calculation fails, the obligation will not be marked as fulfilled. Customers can also use [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html) to check the status of their [obligations](#retrieving-obligations). 
 
 <a href="figures/submit-periodics.svg" target="blank"><img src="figures/submit-periodics.svg" alt="submit periodics diagram" style="width:720px;" /></a>
 
@@ -301,18 +301,18 @@ As part of the EOPS process, customers must ensure that they have provided all t
 
 4. The customer is encouraged to review the Business Income Source Summary (BISS) information before submitting their EOPS. In software, this information can be retrieved in one of two ways. The software can either choose to create a BISS from data stored locally or the software can use the [Business Income Source Summary (BISS)](/api-documentation/docs/api/service/self-assessment-biss-api) API to retrieve the BISS information from HMRC.
 
-5. The software is encouraged to display the following information to the customer. This allows the customer to confirm it is complete and correct for that source of business income before they send the declaration.
-    - Total Business Income
-    - Total Expenses
-    - Business Net Profit
-    - Business Net Loss
-    - Total Additions to net profit or deductions to a net loss
-    - Total Deductions to net profit or additions to a net loss
-    - Accounting Adjustments
-    - Taxable Profit
-    - Taxable Loss
+5. The software is encouraged to display the following information to the customer (this allows the customer to confirm it is complete and correct for that source of business income before they send the declaration):
+    - total business income
+    - total expenses
+    - business net profit
+    - business net loss
+    - total additions to net profit or deductions to a net loss
+    - total deductions to net profit or additions to a net loss
+    - accounting adjustments
+    - taxable profit
+    - taxable loss
 
-6. The customer can then go ahead and submit their end-of-period statement for the business income source. In software, this submission is done by calling the [Submit End of Period Statement for a Business](/api-documentation/docs/api/service/individuals-business-eops-api/3.0/oas/page#/paths/~1individuals~1business~1end-of-period-statement~1%7Bnino%7D/post) endpoint.
+6. The customer can then submit their end-of-period statement for the business income source. In software, this submission is done by calling the [Submit End of Period Statement for a Business](/api-documentation/docs/api/service/individuals-business-eops-api/3.0/oas/page#/paths/~1individuals~1business~1end-of-period-statement~1%7Bnino%7D/post) endpoint.
 
 7. After a successful submission, HMRC receives the declaration and provides a success response.
 
@@ -344,7 +344,7 @@ The exact text that HMRC requires the software to present during EOPS declaratio
 
 ## Tax calculation
 
-As part of MTD, software vendors can retrieve tax calculations directly from HMRC. HMRC calculates in-year estimates, annual forecasts and end-of-year tax calculations (final declaration). The calculation retrieved by the software is the same as the one used by HMRC. 
+As part of MTD, software providers can retrieve tax calculations directly from HMRC. HMRC calculates in-year estimates, annual forecasts and end-of-year tax calculations (final declaration). The calculation retrieved by the software is the same as the one used by HMRC. 
 
 The customer can check their tax calculation at any time during the year. All the Self Assessment tax calculation endpoints are available in the [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api/). There are several messages built into the API that provide guidance and explanations to customers, for example: 
 
@@ -377,4 +377,4 @@ The calculation output provides a summary of each income source (for example, se
 
 If the customer retrieves a tax calculation during the year, it is an estimated forecast and they do not need to pay any tax at this time. They will pay tax after submitting their final declaration.
 
-If a software vendor identifies what they think could be a problem with the [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api), they will need to contact [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk).
+If a software provider identifies what they think could be a problem with the [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api), they will need to contact [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk).

@@ -55,7 +55,7 @@ Employers will also submit financial details that form the customers earnings an
 
 #### Off-payroll working (OPW) rules
 
-Off-payroll working rules (IR35) govern how a worker (sometimes called a contractor) who is providing their services through an intermediary such as a personal service company, is treated in terms of their Income Tax and National Insurance. More information on off-payroll working rules can be found on the [GOV.UK](https://www.gov.uk/guidance/understanding-off-payroll-working-ir35) website.
+Off-payroll working rules (IR35) govern how a worker (sometimes called a contractor) who is providing their services through an intermediary such as a personal service company, is treated in terms of their Income Tax and National Insurance. More information about off-payroll working rules can be found on the [GOV.UK](https://www.gov.uk/guidance/understanding-off-payroll-working-ir35) website.
 
 The off-payroll worker status can be seen in-year as part of the employment pre-population into the customer’s self-assessment tax calculations. In software, the off-payroll working status is retrieved using the [Retrieve an Employment and its Financial Details](/api-documentation/docs/api/service/individuals-employments-income-api/1.0/oas/page#tag/Employments/paths/~1individuals~1employments-income~1%7Bnino%7D~1%7BtaxYear%7D~1%7BemploymentId%7D~1financial-details/get) endpoint. The status is also available in the [Retrieve A Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D/get) endpoint. If the status is set to false, indicating the worker is not regarded as being subject to OPW rules, the software should not display it to the customer. This status is view-only: the customer does not need to take any action unless they think it has been set in error, in which case they must contact their employer.
 
@@ -357,15 +357,15 @@ Capital Gains Tax (CGT) is a tax on the profit when someone sells or disposes of
 * other property 
 * listed and unlisted shares and securities 
 
-For more information on Capital Gains Tax, see [Capital Gains Tax: what you pay it on, rates and allowances](https://www.gov.uk/capital-gains-tax).
+For more information about Capital Gains Tax, refer to [Capital Gains Tax: what you pay it on, rates and allowances (GOV.UK)](https://www.gov.uk/capital-gains-tax).
 
-MTD customers can also report any losses they have made. This charge may be set against earlier or later years. When the customer sells or disposes of the whole or part of a UK residential property and is liable to pay CGT, they must tell HMRC within a specific time following the date of completion of the sale. For more information on the reporting requirement, see [Report and pay your Capital Gains Tax: If you sold a property in the UK on or after 6 April 2020](https://www.gov.uk/report-and-pay-your-capital-gains-tax/if-you-sold-a-property-in-the-uk-on-or-after-6-april-2020). For non-resident customers, see [Tell HMRC about Capital Gains Tax on UK property or land if you’re not a UK resident](https://www.gov.uk/guidance/capital-gains-tax-for-non-residents-uk-residential-property), which advises on how these gains must be reported in year.
+MTD customers can also report any losses they have made. This charge may be set against earlier or later years. When the customer sells or disposes of the whole or part of a UK residential property and is liable to pay CGT, they must tell HMRC within a specific time following the date of completion of the sale. For more information about the reporting requirement, refer to [Report and pay your Capital Gains Tax: If you sold a property in the UK on or after 6 April 2020 (GOV.UK)](https://www.gov.uk/report-and-pay-your-capital-gains-tax/if-you-sold-a-property-in-the-uk-on-or-after-6-april-2020). For non-resident customers, refer to [Tell HMRC about Capital Gains Tax on UK property or land if you’re not a UK resident (GOV.UK)](https://www.gov.uk/guidance/capital-gains-tax-for-non-residents-uk-residential-property), which advises on how these gains must be reported in year.
 
 The customer can create, update, or delete their CGT in software only after the end of the tax year. If they need to make changes during the year, they need to use HMRC online services. In some cases, customers must report and pay before they submit their final declaration. However, this information will still need to be included in their final declaration if they are a Self Assessment or MTD customer.
 
 An MTD customer can do the following: 
 
-* view CGT Residential Property Disposals for PPD, non-PPD and other capital gains and disposals
+* view CGT Residential Property Disposals for personal property disposal (PPD), non-PPD and other capital gains and disposals
 * create or amend CGT Residential Property Disposals for PPD, non-PPD and other capital gains and disposals
 * delete CGT Residential Property Disposals for PPD, non-PPD and other capital gains and disposals
 
@@ -375,6 +375,7 @@ At any time, a customer can view their capital gains tax information. In softwar
 
 * [Retrieve All CGT Residential Property Disposals and Overrides (Includes PPD and Non-PPD)](/api-documentation/docs/api/service/individuals-capital-gains-income-api/1.0/oas/page#tag/Capital-Gains-on-Residential-Property-Disposals/paths/~1individuals~1disposals-income~1residential-property~1%7Bnino%7D~1%7BtaxYear%7D/get)
 * [Retrieve Other Capital Gains and Disposals](/api-documentation/docs/api/service/individuals-capital-gains-income-api/1.0/oas/page#tag/Other-Capital-Gains-and-Disposals/paths/~1individuals~1disposals-income~1other-gains~1%7Bnino%7D~1%7BtaxYear%7D/get)
+
 ### Creating or Amending CGT
 
 Customers can create or amend the different types of CGT information after the end of the tax year. This change must be done before they submit their final declaration. In software, this information is updated using the following endpoints:
@@ -395,4 +396,4 @@ Customers can delete different types of CGT only after the end of the tax year a
 
 Marriage Allowance allows the customer to transfer some of their Personal Allowance to their husband, wife or civil partner. This will reduce the customer's tax in the next tax year (6 April to 5 April). For more information about marriage allowance, refer to [Marriage Allowance: How it works - GOV.UK](https://www.gov.uk/marriage-allowance).
 
-Customers can create a Marriage Allowance claim using their name, date of birth and NINO. To do this action, the software must call the [Create Marriage Allowance](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Marriage-Allowance/paths/~1individuals~1disclosures~1marriage-allowance~1{nino}/post) endpoint in the [Individuals Disclosures API](/api-documentation/docs/api/service/individuals-disclosures-api/). After the claim has been accepted by HMRC, the customer can view their Marriage Allowance in their tax calculations.
+Customers can create a Marriage Allowance claim using their name, date of birth and National Insurance number. To do this action, the software must call the [Create Marriage Allowance](/api-documentation/docs/api/service/individuals-disclosures-api/1.0/oas/page#tag/Marriage-Allowance/paths/~1individuals~1disclosures~1marriage-allowance~1{nino}/post) endpoint in the [Individuals Disclosures API](/api-documentation/docs/api/service/individuals-disclosures-api/). After the claim has been accepted by HMRC, the customer can view their Marriage Allowance in their tax calculations.

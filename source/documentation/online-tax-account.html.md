@@ -30,13 +30,13 @@ The following table lists the tasks customers will be able to complete through H
 | Request a time to pay | Future development | Yes | No | For security reasons, this functionality will be available only in HMRC online services. |
 | [Make a payment](#making-a-payment) | Live | Yes | No | Functionality will be available in software as part of a future HMRC delivery. |
 | Check money in the account | Live | Yes | Yes | All users need access to this functionality. |
-| [Claim a refund](#claiming-a-refund) | Under development  | Yes | No | For security reasons, this functionality will be available only in HMRC online services. Discovery is pending on end of year repayments. |
-| Check refund details and status | Under development  | Yes | No | For security reasons, this functionality will be available only in HMRC online services. Discovery is pending on end of year repayments. |
+| [Claim a refund](#claiming-a-refund) | In development | Yes | No | For security reasons, this functionality will be available only in HMRC online services. Discovery is pending on end of year repayments. |
+| Check refund details and status | In development | Yes | No | For security reasons, this functionality will be available only in HMRC online services. Discovery is pending on end of year repayments. |
 | Provide bank details for future refunds | Future development | Yes | No | For security reasons, this functionality will be available only in HMRC online services. |
 | [Leave MTD as a voluntary customer](#opting-out-of-mtd) | Future development | Yes | No | Availability as a software service depends on user need. |
 | Sign up to MTD as a voluntary customer for those who have previously opted out of MTD | Future development | Yes | No | Availability as a software service depends on user need. |
 
-Agents will be able to access Making Tax Digital for Income Tax services through their agent services account. They will be able to access all current and future services on behalf of their clients including the services listed in the above table, except for:
+Agents will be able to access Making Tax Digital for Income Tax services through their agent services account. They will be able to access all current and future services on behalf of their clients including the services listed in the table above, except for:
 
 - changing their client’s repayment bank details 
 - changing their client’s contact preference
@@ -74,11 +74,11 @@ After a business has been updated as ceased, it can be seen almost immediately i
 
 In the future, it will be possible to reopen a closed business or change an incorrectly entered end date.
 
-## Making a Payment
+## Making a payment
 
 Customers can make a payment towards their liability through HMRC online services or there is an alternative route which is detailed on [Pay your Self Assessment tax bill: Overview - GOV.UK (www.gov.uk)](https://www.gov.uk/pay-self-assessment-tax-bill?_ga=2.87410077.442895640.1693813671-569616403.1678098699&_gl=1*xnov4c*_ga*NTY5NjE2NDAzLjE2NzgwOTg2OTk.*_ga_Y4LWMWY6WS*MTY5NDAxMTU5Ny43LjEuMTY5NDAxMTYwOS4wLjAuMA..). 
 
-When a payment is made, the current payment service will first check to see if there is any outstanding liability from previous Self Assessment Tax returns, and it will prioritise the allocation of funds there.  Following that allocation, if there is any payment remaining, it will be allocated to any unpaid Payment on account charges  or  owed liability following an MTD final declaration.  If those remaining funds don’t fully cover that MTD liability, this still must  be paid by 31st January.  In this instance, the [Self Assessment Accounts API](/api-documentation/docs/api/service/self-assessment-accounts-api/) can be used through software to see how much of their MTD liability is outstanding. However, it will not show them the amount that has been apportioned to previous tax year self assessment returns.  To view this, a customer will need to access HMRC online services.   
+When a payment is made, the current payment service will first check to see if there is any outstanding liability from previous Self Assessment Tax returns, and it will prioritise the allocation of funds there.  Following that allocation, if there is any payment remaining, it will be allocated to any unpaid Payment on account charges  or  owed liability following an MTD final declaration.  If those remaining funds do not fully cover that MTD liability, this still must  be paid by 31 January.  In this instance, the [Self Assessment Accounts API](/api-documentation/docs/api/service/self-assessment-accounts-api/) can be used through software to see how much of their MTD liability is outstanding. However, it will not show them the amount that has been apportioned to previous tax year self assessment returns.  To view this, a customer will need to access HMRC online services.   
 
 ## Claiming a refund
 
@@ -90,16 +90,16 @@ Customers who are in MTD on a voluntary basis can leave (opt out) at any time. W
 
 Eligibility to opt out is determined on a tax year basis. For example, a customer can be mandated for the current year and voluntary for the next year, meaning the customer could opt out next year. A customer can opt out for the previous tax year if they signed up to MTD as a voluntary customer, then subsequently decided not to submit quarterly - opting out would allow the customer to file on an annual basis for that year.
 
-The opt out service will not be available through an API. Customers and agents must use different methods to view any changes to filing obligations.
+The opt-out service will not be available through an API. Customers and agents must use different methods to view any changes to filing obligations.
 
 | User type | Method |
 | --------- | ------ |
-| Customer | Use their HMRC online services account to access the opt out service and view their changed obligations immediately. |
+| Customer | Use their HMRC online services account to access the opt-out service and view their changed obligations immediately. |
 | Agent | Use their Agent Services Account to access their client’s account. Changed obligations will be viewable immediately in their software. |
 
 If the customer has submitted updates of business income and expenses (self-employment and/or property) through their software for the tax year they opt out of MTD, these updates will be deleted. The customer or their agent will receive a warning message to inform them that this is going to happen. The total business income and expenses (for the tax year) must then be submitted as part of the customer’s tax return before completing their final declaration.
 
-If a customer is mandated to be in MTD, they will not be eligible to opt out. The opt out service will only be available in HMRC online services for eligible customers.
+If a customer is mandated to be in MTD, they will not be eligible to opt out. The opt-out service will only be available in HMRC online services for eligible customers.
 
 ## Future development
 The following tasks are scheduled for future development and we will provide more information about them when available:

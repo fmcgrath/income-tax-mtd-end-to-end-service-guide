@@ -1,11 +1,11 @@
 ---
-title: API Deprecation Guidance | Income Tax (Making Tax Digital) end-to-end service guide
+title: API lifecycle and deprecation | Income Tax (Making Tax Digital) end-to-end service guide
 weight: 55
 ---
 
-# API lifecycle & deprecation
+# API lifecycle and deprecation
 
-Each MTD API follows a lifecycle from the point where it is first published to the point where it is retired.
+Each Income Tax (Making Tax Digital) API follows a lifecycle from the point where it is first published to the point where it is retired.
 
 More specifically, every version of each API follows a lifecycle. Different versions of the same API can be at different points in the lifecycle. For example, v1.0 might be retired, v2.0 might be stable and v3.0 might be in beta.
 

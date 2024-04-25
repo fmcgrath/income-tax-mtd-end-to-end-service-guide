@@ -7,7 +7,7 @@ description: Software developers, designers, product owners or business analysts
 # Customer support model
 <!--- Section owner: MTD Programme --->
 
-The customer support model guides HMRC customers to the most appropriate support. Check [GOV.UK](http://gov.uk/) and the software vendor’s guidance first.
+The customer support model guides HMRC customers to the most appropriate support. Check [GOV.UK](http://gov.uk/) and the software provider's guidance first.
 
 Customers who have signed up to the MTD pilot can get support by contacting the dedicated Customer Support Team on 0300 322 9619 from 8am to 6pm Monday to Friday. 
 

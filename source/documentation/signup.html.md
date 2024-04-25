@@ -26,7 +26,7 @@ If an individual is a self employed partner in a partnership, they do not need t
 - sole trader income
 - UK or foreign property income
 
-If this is the case, the individual must not include either their partner or partnership business details in the sign up service. Instead, this income will continue to be submitted as part of their self assessment tax return.  There is no requirement at this time to submit partner or partnership income quarterly to HMRC.
+If this is the case, the individual must not include either their partner or partnership business details in the sign-up service. Instead, this income will continue to be submitted as part of their self assessment tax return.  There is no requirement at this time to submit partner or partnership income quarterly to HMRC.
 
 A user can also get their appointed tax agent (for instance, an accountant or bookkeeper) to sign up on their behalf, with their permission.
 
@@ -51,7 +51,7 @@ For more information, refer to [Making Tax Digital for Income Tax for individual
 
 ## Linking software to HMRC
 
-Businesses and agents using your software to connect to the [Income Tax (Making Tax Digital) APIs](/api-documentation/docs/api?filter=income-tax) must grant authority to your software to interact with HMRC on their behalf. We use the open standard [OAuth 2.0](https://oauth.net/2/) (opens in a new tab), which involves the business or agent signing in via their Government Gateway account and following the grant authority user journey.
+Businesses and agents using your software to connect to the [Income Tax (Making Tax Digital) APIs](/api-documentation/docs/api?filter=income-tax) must grant authority to your software to interact with HMRC on their behalf. We use the open standard [OAuth 2.0](https://oauth.net/2/) (opens in new tab), which involves the business or agent using their Government Gateway account to sign in and following the grant authority user journey.
 
 <a href="figures/link-software-to-hmrc.svg" target="blank"><img src="figures/link-software-to-hmrc.svg" alt="Link software to HMRC" style="width:720px;" /></a>
 

@@ -22,7 +22,7 @@ Before starting the final declaration journey, the software package must ensure 
 * has already provided their entire income (for example, interest, dividends, other SA schedules)
 * does not have any additional information to provide (for example, information about how to treat a loss)
 
-If your software will not allow customers to report their entire income and reliefs, customers should be informed to report them using HMRC Online Services.
+If your software will not allow customers to report their entire income and reliefs, customers should be informed to report them using [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html).
 
 ## Making a final declaration
 
@@ -37,7 +37,7 @@ If the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/s
 
 If a customer thinks the calculation is incorrect based on the data they have submitted, they can go back and change the information by resubmitting the relevant update with the correct information. After they have done this, the software will have to call the [Trigger a Self Assessment Tax Calculation](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Tax-Calculations/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D/post) endpoint again to generate a new final liability.
 
-If a customer does not agree with the calculation based on rules HMRC has used, they will need to contact HMRC before submitting their final declaration. If a software vendor identifies a problem with the [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api), they will need to contact [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk).
+If a customer does not agree with the calculation based on rules HMRC has used, they will need to contact HMRC before submitting their final declaration. If a software provider identifies a problem with the [Individual Calculations API](/api-documentation/docs/api/service/individual-calculations-api), they will need to contact [SDSTeam@hmrc.gov.uk](mailto:SDSTeam@hmrc.gov.uk).
 
 If a customer thinks the calculation is correct, they can use the [Submit a Self Assessment Final Declaration](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Final-Declaration/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D~1final-declaration/post) endpoint to submit their final declaration. 
 
@@ -45,7 +45,7 @@ If a customer thinks the calculation is correct, they can use the [Submit a Self
 
 ### Agreeing to the declaration
 
-After a customer is confident that they have submitted all the required income tax information through software and HMRC online services, they will have to agree to a declaration and send it to HMRC. When using the software, this is done by using the [Submit a Self Assessment Final Declaration](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Final-Declaration/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D~1final-declaration/post) endpoint.
+After a customer is confident that they have submitted all the required income tax information through software and [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html), they will have to agree to a declaration and send it to HMRC. When using the software, this is done by using the [Submit a Self Assessment Final Declaration](/api-documentation/docs/api/service/individual-calculations-api/5.0/oas/page#tag/Final-Declaration/paths/~1individuals~1calculations~1%7Bnino%7D~1self-assessment~1%7BtaxYear%7D~1%7BcalculationId%7D~1final-declaration/post) endpoint.
 
  > **The Declaration**
 
@@ -90,26 +90,26 @@ If a customer wants to make any changes following a final declaration, they have
 
 ## Pay or get a repayment
 
-Vendors should present messages to business users at key points in their user journey that gives them the option to make payments ahead of any obligation date to help spread the cost. We will deliver functionality that allows vendors to make users aware of payment dates but the payment itself cannot be made through software.
+Software providers should present messages to business users at key points in their user journey that gives them the option to make payments ahead of any obligation date to help spread the cost. We will deliver functionality that allows software providers to make users aware of payment dates but the payment itself cannot be made through software.
 
 There are multiple ways to make a payment for Self Assessment which can be found on GOV.UK at:
 
 [https://www.gov.uk/pay-self-assessment-tax-bill](https://www.gov.uk/pay-self-assessment-tax-bill)
 
-Vendors should, in their messaging, ask customers to visit that link so the customer can make a payment in the method that suits them.
+In their messaging, software providers should ask customers to visit that link so the customer can make a payment in the method that suits them.
 
 The contents of this GOV.UK page will be updated and subject to change.
 
-For a business to view the previous payments it has made to HMRC, vendors should present messages at key points in their journey that encourage them to visit their HMRC Online Services account at:
+For a business to view the previous payments it has made to HMRC, software providers should present messages at key points in their journey that encourage them to visit their [HMRC online services](/guides/income-tax-mtd-end-to-end-service-guide/documentation/online-tax-account.html) account at:
 
 [https://www.tax.service.gov.uk/business-account](https://www.tax.service.gov.uk/business-account)
 
-Vendors in their messaging should ask customers to visit that link.
+In their messaging, software providers should ask customers to visit that link.
 
-Customers can pay their tax bills by direct debit, making it easy and convenient to pay. HMRC is delivering functionality for customers to set up direct debit instructions to pay tax when it becomes due. Customers may also set up a regular payment plan to ensure funds are available when tax becomes due. These services will be available when a customer first subscribes to HMRCs tax services, and at any time after a customer has been subscribed through their digital tax account. Access to the services will be via the customer’s digital tax account at:
+Customers can pay their tax bills by direct debit, making it easy and convenient to pay. HMRC is delivering functionality for customers to set up direct debit instructions to pay tax when it becomes due. Customers may also set up a regular payment plan to ensure funds are available when tax becomes due. These services will be available when a customer first subscribes to HMRC tax services, and at any time after a customer has been subscribed through their digital tax account. The customer’s digital tax account will be used to access the service:
 
 [https://www.tax.service.gov.uk/personal-account](https://www.tax.service.gov.uk/personal-account)
 
-Vendors in their messaging should ask customers to visit that link.  
+Software providers in their messaging should ask customers to visit that link.  
 
 Customers will be able to view payments made to HMRC in the software. Details will be updated here after they are available.
