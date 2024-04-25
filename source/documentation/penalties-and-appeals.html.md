@@ -1,11 +1,11 @@
 ---
-title: Penalties and Appeals | VAT (MTD) End-to-End Service Guide
+title: Penalties and appeals | Income Tax (Making Tax Digital) end-to-end service guide
 weight: 10
 ---
 
 <!--- Section owner: MTD Programme --->
 
-# Penalties and Appeals
+# Penalties and appeals
 
 ## Penalties for late payment and late submission
 

@@ -1,12 +1,12 @@
 ---
-title: Payments and Liabilities | Income Tax (MTD) End-to-End Service Guide
+title: Payments and liabilities | Income Tax (Making Tax Digital) end-to-end service guide
 weight: 7
 description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
 ---
 
 <!--- Section owner: MTD Programme --->
 
-# Payments and Liabilities
+# Payments and liabilities
 
 The [Self Assessment Accounts API](/api-documentation/docs/api/service/self-assessment-accounts-api/) has a suite of endpoints that retrieve the customer’s payment and liability information. The data returned relates only to payments and liabilities arising for tax years since the customer joined the new service. There may also be outstanding liabilities and payment information a customer needs to view for the years before signing up to Making Tax Digital for Income Tax Self Assessment that can be viewed using the HMRC online services account.
 

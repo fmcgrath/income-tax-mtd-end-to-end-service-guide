@@ -1,5 +1,5 @@
 ---
-title: Sign up
+title: Sign up | Income Tax (Making Tax Digital) end-to-end service guide
 weight: 2
 description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
 ---

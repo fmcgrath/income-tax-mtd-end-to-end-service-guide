@@ -1,12 +1,12 @@
 ---
-title: Final Declaration
+title: Final declaration | Income Tax (Making Tax Digital) end-to-end service guide
 weight: 6
 description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
 ---
 
 <!--- Section owner: MTD Programme --->
 
-# Final Declaration
+# Final declaration
 Final declaration is the process that allows customers to finalise their tax position for any one tax year, taking into account all sources of chargeable income and gains, whether business income or otherwise. 
 
 It is also the process by which most formal claims for reliefs and allowances and any deductions are made, where these were previously included within a Self Assessment tax return.
@@ -102,16 +102,13 @@ The contents of this GOV.UK page will be updated and subject to change.
 
 For a business to view the previous payments it has made to HMRC, vendors should present messages at key points in their journey that encourage them to visit their HMRC Online Services account at:
 
-[https://www.access.service.gov.uk/login/signin/creds](https://www.access.service.gov.uk/login/signin/creds)
+[https://www.tax.service.gov.uk/business-account](https://www.tax.service.gov.uk/business-account)
 
 Vendors in their messaging should ask customers to visit that link.
 
-Customers can pay their tax bills by direct debit, making it easy and convenient to pay.
-HMRC is delivering functionality for customers to set up direct debit instructions to pay tax when it becomes due. Customers may also set up a regular payment plan to ensure funds are available when tax becomes due.
-These services will be available when a customer first subscribes to HMRCs tax services, and at any time after a customer has been subscribed through their digital tax
-account. Access to the services will be via the customer’s digital tax account at:
+Customers can pay their tax bills by direct debit, making it easy and convenient to pay. HMRC is delivering functionality for customers to set up direct debit instructions to pay tax when it becomes due. Customers may also set up a regular payment plan to ensure funds are available when tax becomes due. These services will be available when a customer first subscribes to HMRCs tax services, and at any time after a customer has been subscribed through their digital tax account. Access to the services will be via the customer’s digital tax account at:
 
-[https://www.access.service.gov.uk/login/signin/creds](https://www.access.service.gov.uk/login/signin/creds)
+[https://www.tax.service.gov.uk/personal-account](https://www.tax.service.gov.uk/personal-account)
 
 Vendors in their messaging should ask customers to visit that link.  
 

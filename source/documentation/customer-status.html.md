@@ -1,5 +1,5 @@
 ---
-title: Customer status | ITSA (MTD) End-to-End Service Guide
+title: Customer status | Income Tax (Making Tax Digital) end-to-end service guide
 weight: 3
 ---
 

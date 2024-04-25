@@ -1,12 +1,12 @@
 ---
-title: Using Tax Codes to Collect Tax Due | Income Tax (MTD) End-to-End Service Guide
+title: Using tax codes to collect tax due | Income Tax (Making Tax Digital) end-to-end service guide
 weight: 33
 description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
 ---
 
 <!--- Section owner: MTD Programme --->
 
-# Using Tax Codes to Collect Tax Due
+# Using tax codes to collect tax due
 
 When a Self Assessment customer receives PAYE income in addition to business income, HMRC will try to collect any Self Assessment tax owed through their tax code for the following tax year.
 

@@ -1,5 +1,5 @@
 ---
-title: HMRC Assist | Income Tax (MTD) End-to-End Service Guide
+title: HMRC Assist | Income Tax (Making Tax Digital) end-to-end service guide
 weight: 50
 description: Software developers, designers, product owners or business analysts. Integrate your software with the Income Tax API for Making Tax Digital.
 ---

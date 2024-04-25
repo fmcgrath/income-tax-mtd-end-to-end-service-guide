@@ -1,5 +1,5 @@
 ---
-title: API Deprecation Guidance
+title: API Deprecation Guidance | Income Tax (Making Tax Digital) end-to-end service guide
 weight: 55
 ---
 
